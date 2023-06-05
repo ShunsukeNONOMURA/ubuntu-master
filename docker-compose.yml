@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ubuntu:
+    build: ./ubuntu
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: python3 main.py
+    # restart: always
